@@ -9,7 +9,7 @@ export default function HeaderTab() {
     <View style={{flexDirection: "row", alignSelf:"center"}}>
       <HeaderButton
         text="Delivery"
-        btnColor="black"
+        btnColor="#1982c4"
         textColor="white"
         activeTab={activeTab}
         setActiveTab={setActiveTab}
@@ -17,7 +17,7 @@ export default function HeaderTab() {
       <HeaderButton
         text="Pickup"
         btnColor="white"
-        textColor="black"
+        textColor="#1982c4"
         activeTab={activeTab}
         setActiveTab={setActiveTab}
       />
@@ -28,7 +28,7 @@ export default function HeaderTab() {
 const HeaderButton = (props) => (
   <TouchableOpacity
     style={{
-      backgroundColor: props.activeTab === props.text ? "black" : "white",
+      backgroundColor: props.activeTab === props.text ? "#1982c4" : "white",
       paddingVertical: 6,
       paddingHorizontal: 16,
       borderRadius: 24,
@@ -37,7 +37,7 @@ const HeaderButton = (props) => (
   >
     <Text
       style={{
-        color: props.activeTab === props.text ? "white" : "black",
+        color: props.activeTab === props.text ? "white" : "#1982c4",
         fontSize: 15,
         fontWeight:"900",
       }}
